@@ -1,6 +1,6 @@
 package org.example.produtos;
 
-public abstract class Produto implements Estoque {//não pode criar um objeto dela
+public abstract class Produto implements Estoque, Desconto{
 
     private String nome;
     private String descricao;
@@ -9,7 +9,7 @@ public abstract class Produto implements Estoque {//não pode criar um objeto de
     private Estoque estoque;
 
 
-    public Produto(String nome, String descricao, double preco, String marca, Estoque estoque, int codigo) {//posso adicionar atributos que nao tem variaveis?
+    public Produto(String nome, String descricao, double preco, String marca, int codigo) {//posso adicionar atributos que nao tem variaveis?
         this.nome = nome;
         this.descricao = descricao;
         this.preco = preco;
@@ -65,15 +65,7 @@ public abstract class Produto implements Estoque {//não pode criar um objeto de
         System.out.println("Marca: " + this.marca);
     }
 
+    public abstract void calcularImposto();// se  a classe não for absastrata não pode ter um metodo abstrato
 
-    public void aplicarDesconto(double percentualDesconto) {
-        double desconto = this.preco * percentualDesconto / 100;
-        this.preco -= desconto;
-    }
-
-    public abstract double calcularImposto();// se  a classe não for absastrata não pode ter um metodo abstrato
-
-//        return this.preco * 0.1; // Exemplo de cálculo fictício de imposto
-//    }
 
 }
