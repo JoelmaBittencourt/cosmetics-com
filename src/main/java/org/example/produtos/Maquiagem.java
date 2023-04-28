@@ -2,7 +2,7 @@ package org.example.produtos;
 
 public class Maquiagem extends Produto {
 
-    private String tipoDeProduto; // Atributo específico de Maquiagem
+    private String[] tipoDeProduto; // Atributo específico de Maquiagem
     private String cor; // Atributo específico de Maquiagem
 
     public Maquiagem(String nome, String descricao, double preco, String marca, int codigo) {

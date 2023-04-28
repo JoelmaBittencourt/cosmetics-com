@@ -28,19 +28,4 @@ public class Perfumes extends Produto{
 
     }
 
-//    @Override
-//    public double calcularImposto() {
-//        return 0;
-//    }
-//
-//
-//    @Override
-//    public void removerProduto(int quantidade) {
-//
-//    }
-//
-//    @Override
-//    public void exibirStatusEstoque() {
-//
-//    }
 }
