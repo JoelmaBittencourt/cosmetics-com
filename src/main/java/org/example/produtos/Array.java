@@ -1,6 +1,6 @@
 package org.example.produtos;
 
-public class Arrays {
+public class Array {
     public static void main(String[] args) {
         String a = "a";
         String b = "a";

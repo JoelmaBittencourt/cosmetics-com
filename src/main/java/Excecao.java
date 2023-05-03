@@ -1,5 +1,5 @@
 public class Excecao {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         int[] vetor = new int[10];
 
@@ -20,7 +20,7 @@ public class Excecao {
             System.out.println("Antes da exception");
             vetor[10] = 10;
         } catch (Exception e) {
-            System.out.println("Depois da exception");
+            System.out.println("Depois da exception genérica");
             e.printStackTrace();
         }
 
