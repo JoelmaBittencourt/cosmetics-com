@@ -3,9 +3,9 @@ public class Excecao {
 
         int[] vetor = new int[10];
 
-        System.out.println("Antes da exception");
-        vetor[10] = 10;
-        System.out.println("Depois da exception");
+//        System.out.println("Antes da exception");
+//        vetor[10] = 10;
+//        System.out.println("Depois da exception");
 
 
         try {
