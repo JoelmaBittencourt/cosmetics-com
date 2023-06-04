@@ -2,22 +2,19 @@ package org.example.produtos;
 
 public class Maquiagem extends Produto {
 
-    private String tipoDeProduto; // Atributo específico de Maquiagem
-    private String cor; // Atributo específico de Maquiagem
+    private String tipoDeProduto;
+    private String cor;
 
     public Maquiagem(String nome, String descricao, double preco, String marca, int codigo) {
         super(nome, descricao, preco, marca, codigo);
     }
 
-    @Override
-    public void calcularImposto() {
-    }
 
-    @Override
     public void exibirDetalhesDeProduto() {
         System.out.println("Tipo:" + this.tipoDeProduto);
         System.out.println("Marca:" + this.cor);
-        super.exibirDetalhesDeProduto();
+        super.toString();
+
 
     }
 
@@ -35,5 +32,4 @@ public class Maquiagem extends Produto {
     public void aplicarDesconto(double valorDesconto) {
 
     }
-
 }

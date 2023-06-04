@@ -9,8 +9,7 @@ public abstract class Produto implements Estoque, Desconto{
     private Estoque estoque;
 
 
-    public Produto(String nome, String descricao, double preco, String marca, int codigo) {//posso adicionar atributos que nao tem variaveis?
-        this.nome = nome;
+    public Produto(String nome, String descricao, double preco, String marca, int codigo) {
         this.descricao = descricao;
         this.preco = preco;
         this.marca = marca;
@@ -57,15 +56,14 @@ public abstract class Produto implements Estoque, Desconto{
         this.estoque = estoque;
     }
 
-
-    public void exibirDetalhesDeProduto() {
-        System.out.println("Nome: " + this.nome);
-        System.out.println("Descrição: " + this.descricao);
-        System.out.println("Preço: R$" + this.preco);
-        System.out.println("Marca: " + this.marca);
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "nome='" + nome + '\'' +
+                ", descricao='" + descricao + '\'' +
+                ", preco=" + preco +
+                ", marca='" + marca + '\'' +
+                ", estoque=" + estoque +
+                '}';
     }
-
-    public abstract void calcularImposto();// se  a classe não for absastrata não pode ter um metodo abstrato
-
-
 }

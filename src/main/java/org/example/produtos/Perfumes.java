@@ -9,9 +9,6 @@ public class Perfumes extends Produto{
         super(nome, descricao, preco, marca, codigo);
     }
 
-    @Override
-    public void calcularImposto() {
-    }
 
     @Override
     public void removerProduto(int quantidade) {
